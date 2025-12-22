@@ -68,10 +68,18 @@ pip install -r requirements.txt
 ```bash
 python -m src.main
 ```
+<img width="671" height="60" alt="image" src="https://github.com/user-attachments/assets/0566b942-a420-4512-bd92-21cb239ac210" />
+
 
 5. **Test with example queries.**
 ```bash
 English: I forgot my password
+```
+<img width="1226" height="467" alt="image" src="https://github.com/user-attachments/assets/03b651b3-ec0f-4680-991f-2b8bd7fa5cd8" />
+
+```bash
 Macedonian: Не можам да се најавам
 ```
+<img width="1156" height="471" alt="image" src="https://github.com/user-attachments/assets/c25ce1b1-1e72-4f82-a627-e4a845e5188f" />
+
 - The system returns the top relevant FAQs with confidence scores.
