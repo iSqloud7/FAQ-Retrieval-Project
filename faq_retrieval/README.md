@@ -83,3 +83,37 @@ Macedonian: Не можам да се најавам
 <img width="1156" height="471" alt="image" src="https://github.com/user-attachments/assets/c25ce1b1-1e72-4f82-a627-e4a845e5188f" />
 
 - The system returns the top relevant FAQs with confidence scores.
+
+## Improvements (scaling this solution for a real product (Verba AI)).
+
+This project demonstrates the core building block of a semantic FAQ retrieval system.
+To scale it into a real-world product like Verba AI, several architectural improvements
+would be applied.
+
+#### 1. Vector Storage and Retrieval
+FAQ embeddings would be stored in a vector database (e.g. FAISS, Pinecone, Weaviate)
+instead of in memory. This enables fast and scalable similarity search over large knowledge
+bases.
+
+#### 2. API Layer
+The retrieval logic would be exposed via an API (FastAPI), allowing integration
+with chatbots, web applications, and customer-support platforms.
+
+#### 3. Approximate Nearest Neighbor Search
+For large-scale deployments, exact cosine similarity would be replaced with
+Approximate Nearest Neighbor (ANN) search to significantly reduce query time
+while maintaining high accuracy.
+
+#### 4. Multilingual and Language Routing
+Multilingual support can be enhanced by adding language detection and routing queries to
+language-optimized models or embeddings.
+
+#### 5. Confidence Thresholding and Escalation
+Confidence scores can be used to define thresholds:
+- High confidence → auto-answer
+- Low confidence → escalate to a human agent or fallback workflow
+
+Overall, this prototype reflects the same retrieval principles used in real-world
+AI customer support platforms like Verba AI, with clear paths for scalability,
+reliability, and production deployment.
+
